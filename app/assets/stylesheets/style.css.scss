@@ -3,6 +3,7 @@ body {
   padding: 0;
   background: #fff;
   color: #000;
+  font-family: Arial, Helvetica, sans-serif !important;
 }
 
 .clear {
@@ -26,14 +27,14 @@ body {
     padding: 0;
     li {
       margin: 0;
-      padding: 6px 0 0 0;
+      padding: 9px 0;
       float: left;
       list-style: none;
       a {
         text-decoration: none;
         color: #000;
-        padding: 0 7px 0 20px;
-        font-size: 13px;
+        padding: 0 20px 0 0;
+        font-size: 15px;
         font-family: Arial, Helvetica, sans-serif;
       }
     }
@@ -54,15 +55,15 @@ body {
     float: right;
     li {
       margin: 0;
-      padding: 6px 0 0 0;
+      padding: 9px 0;
       float: left;
       list-style: none;
       a {
         color: #0000CC;
         text-decoration: underline;
         margin: 0;
-        padding: 0 20px 0 10px;
-        font-size: 13px;
+        padding: 0 0 0 24px;
+        font-size: 15px;
         font-family: Arial, Helvetica, sans-serif;
       }
     }
@@ -86,8 +87,9 @@ body {
   margin: 10px 0 0 0;
   padding-right: 2px !important;
   padding-left: 3px !important;
-  font-size: 12px;
+  font-size: 13px;
   color: #aaa;
+  line-height: 25px;
   h1 {
     color: #FF6600;
     font-size: 20px;
@@ -113,6 +115,8 @@ body {
   background: -webkit-linear-gradient(#3163f2, #2b57d5) repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
   border-radius: 0 !important;
   margin-top: 37px;
+  font-size: 16px !important;
+  padding: 4px 11px !important;
   border-top: 2px solid #6699FF !important;
   &:hover {
     background: linear-gradient(#4273ff, #3364f1) repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
@@ -122,7 +126,7 @@ body {
 
 .find p a {
   color: #7777CC !important;
-  font-size: 11px;
+  font-size: 12px;
   text-decoration: underline;
   line-height: 20px;
 }
@@ -133,9 +137,21 @@ body {
 
 .center_text {
   text-align: center;
-  font-size: 13px;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 27px;
+  a {
+    text-decoration: underline;
+    color: #0000CC !important;
+  }
+}
+
+.bottom_text, .visit_text {
+  text-align: center;
+  font-size: 15px;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 20px;
+  padding-top: 13px;
   a {
     text-decoration: underline;
     color: #0000CC !important;
@@ -144,15 +160,15 @@ body {
 
 .footer {
   border-top: 1px solid #CCC;
-  margin-top: 40px;
+  margin-top: 57px;
 }
 
 .footer_text {
   text-align: center;
-  padding-top: 20px;
+  padding-top: 28px;
   a {
     color: #7777CC !important;
-    font-size: 13px;
+    font-size: 14px;
   }
 }
 
@@ -160,7 +176,7 @@ body {
   text-align: center;
   font-size: 13px;
   font-family: Arial, Helvetica, sans-serif;
-  line-height: 20px;
+  line-height: 40px;
   a {
     color: #7777CC !important;
   }
@@ -168,8 +184,9 @@ body {
     font-size: 10px;
     color: #aaa;
   }
-} 
-@media (min-width: 700px) and (max-width: 1000px) {
+}
+
+@media (min-width: 701px) and (max-width: 1000px) {
   .content_wrapper {
     width: 740px;
     margin: 0 auto;
@@ -181,6 +198,7 @@ body {
     display: block !important;
   }
 }
+
 @media (min-width: 320px) and (max-width: 700px) {
   .content_wrapper {
     width: 300px;
