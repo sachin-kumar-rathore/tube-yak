@@ -1,0 +1,68 @@
+%body
+  / header start
+  .row.navigation.row_1
+    .col-md-6.col-sm-7.col-xs-6
+      .left.rmm
+        %ul
+          %li
+            %a{href: "#"}
+              %b Find Jobs
+          %li
+            %a.find_links{href: "#"}
+              Find Resumes
+          %li
+            %a.find_links{href: "#"}
+              Employers / Post Job (free)
+    .col-md-6.col-sm-5.col-xs-6
+      .right
+        %ul
+          %li
+            %a.post_resume{href: "#"}
+              Post  your resume
+          %li
+            %a{href: "#"}
+              Sign in
+  / header end
+  / middle content start
+  .row.row_1
+    .content_wrapper
+      %p.logo
+        =image_tag("logo.png")
+      .row.row_1
+        .col-md-5.col-sm-5.col-xs-10.search
+          %h1 what
+          %input{type: "text", value: ""}/
+          job title, keywords or company name
+        .col-md-5.col-sm-5.col-xs-10.search
+          %h1 where
+          %input{type: "text", value: ""}/
+          city or state
+        .col-md-2.col-sm-2.col-xs-5.find
+          %button.btn.btn-primary.btn-sm.find_btn{type: "button"} Find Jobs
+          %p
+            %a{href: "#"} Advanced Job Search
+      .clear
+      %p.text
+      %p.center_text
+        %a{href: "#"}
+          %b Post your resume
+        \- It only takes a few seconds
+      %p.center_text
+        51,552 new
+        %a{href: "#"} jobs
+        in the last 7 days
+        %br/
+        Search job sites, newspapers, associations and company career pages.
+      / footer start
+      .row.row_1
+        .footer
+          %p.footer_text
+            %a{href: "#"} Browse Jobs -
+            %a{href: "#"} API
+            %a{href: "#"} - About
+          %p.footer_last_text
+            ©2014 Indeed -
+            %a{href: "#"} Cookies, Privacy and Terms
+            %sup New!
+      / footer end
+  / middle content end
