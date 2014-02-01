@@ -3,7 +3,6 @@ source 'http://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
 gem 'haml', '~> 4.0.4'
-gem 'sass-rails', '~> 4.0.0'
 
 # Use mysql as the database for Active Record
 gem 'mysql2'
@@ -40,8 +39,10 @@ end
 # Use unicorn as the app server
 # gem 'unicorn'
 
-# Use Capistrano for deployment
-gem 'pg', group: :production
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
